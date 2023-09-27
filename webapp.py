@@ -15,6 +15,7 @@ st.image(image, use_column_width=True)
 
 pickled_model = pickle.load(open('modelfinal1.pkl', 'rb'))
 
+
 # standrdpickled_model(input_data_reshaped)
 
 st.title(':red[OverianAI]')
