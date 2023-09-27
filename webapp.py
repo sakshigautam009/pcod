@@ -1,20 +1,19 @@
 import streamlit as st
 import pandas as pd
-import matplotlib as plt
 import numpy as np
 import pickle
 from PIL import Image
 import altair as alt
 
-#image = Image.open("logo")
+image = Image.open("logo.png")
 
 # Resize the image to the desired size
-#image = image.resize((500, 100))
+image = image.resize((500, 100))
 
 # Display the image using the Streamlit Image function
-#st.image(image, use_column_width=True)
+st.image(image, use_column_width=True)
 
-pickled_model = pickle.load(open('C:/Users/91834/Desktop/New folder/modelfinal1.pkl', 'rb'))
+pickled_model = pickle.load(open('modelfinal1.pkl', 'rb'))
 
 # standrdpickled_model(input_data_reshaped)
 
